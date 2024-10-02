@@ -39,7 +39,6 @@ def ask_gpt(q):
     }
     r = requests.post(
         "https://api.openai.com/v1/chat/completions",
-        verify=False,
         headers=headers,
         json=payload,
     )
